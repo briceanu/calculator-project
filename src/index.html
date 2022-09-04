@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="sass/main.scss" />
+    <script src="js/main.js" defer></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://icons-for-free.com/iconfiles/png/512/calculator-131994967672059924.png"
+    />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">
+        <h4 class="result" id="lastOperationScreen"></h4>
+        <p class="calculate" id="currentOperationScreen"></p>
+      </div>
+      <div class="clear_delete">
+        <button class="clear btn" id="clearBtn">CLEAR</button>
+        <button class="delete btn" id="deleteBtn">DELETE</button>
+      </div>
+      <div class="line_one">
+        <button class="seven btn" data-number>7</button>
+        <button class="eight btn" data-number>8</button>
+        <button class="nine btn" data-number>9</button>
+        <button class="division btn" data-operator>÷</button>
+      </div>
+      <div class="line_two">
+        <button class="four btn" data-number>4</button>
+        <button class="five btn" data-number>5</button>
+        <button class="six btn" data-number>6</button>
+        <button class="multiply btn" data-operator>&#215;</button>
+      </div>
+      <div class="line_three">
+        <button class="one btn "data-number>1</button>
+        <button class="two btn"data-number>2</button>
+        <button class="three btn"data-number>3</button>
+        <button class="subtraction btn" data-operator>-</button>
+      </div>
+      <div class="line_four">
+        <button class="dot btn" id="pointBtn">.</button>
+        <button class="zero btn" data-number>0</button>
+        <button class="equal btn" id="equalsBtn">=</button>
+        <button class="addition btn" data-operator>+</button>
+      </div>
+    </div>
+    <footer>
+      <p class="paragraph">Copyright &#169 </p>
+      <img src="https://icon-library.com/images/github-icon-svg/github-icon-svg-0.jpg" alt="">
+    </footer>
+   </body>
+</html>

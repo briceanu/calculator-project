@@ -1,0 +1,147 @@
+@import "https://fonts.googleapis.com/css2?family=DynaPuff&family=Lobster&family=Rubik+Dirt&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #90ee90;
+}
+
+.calculator {
+  height: 600px;
+  width: 400px;
+  background-color: #a09c9c;
+  border: 2px solid #000;
+  border-radius: 15px;
+  margin: 1.3rem auto auto;
+  display: block;
+}
+
+.calculator .display {
+  width: 360px;
+  height: 140px;
+  background-color: #ebe4e4;
+  border: 2px solid #000;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.calculator .clear_delete {
+  width: 360px;
+  height: 80px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+}
+
+.calculator .clear_delete .clear {
+  width: 170px;
+  height: 80px;
+  background-color: #f1aff1;
+  border: 2px solid #000;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  font-family: DynaPuff, cursive;
+  font-size: 1.6rem;
+  display: flex;
+}
+
+.calculator .clear_delete .clear:hover {
+  cursor: pointer;
+  background-color: #ca95ca;
+}
+
+.calculator .clear_delete .delete {
+  width: 170px;
+  height: 80px;
+  background-color: #72caec;
+  border: 2px solid #000;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  font-family: DynaPuff, cursive;
+  font-size: 1.6rem;
+  display: flex;
+}
+
+.calculator .clear_delete .delete:hover {
+  cursor: pointer;
+  background-color: #2193c0;
+}
+
+.calculator .line_one, .calculator .line_two, .calculator .line_three, .calculator .line_four {
+  width: 360px;
+  height: 70px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 20px;
+  display: flex;
+}
+
+.calculator .line_one .seven, .calculator .line_one .eight, .calculator .line_one .nine, .calculator .line_one .division, .calculator .line_one .four, .calculator .line_one .five, .calculator .line_one .six, .calculator .line_one .multiply, .calculator .line_one .one, .calculator .line_one .two, .calculator .line_one .three, .calculator .line_one .subtraction, .calculator .line_one .dot, .calculator .line_one .zero, .calculator .line_one .equal, .calculator .line_one .addition, .calculator .line_two .seven, .calculator .line_two .eight, .calculator .line_two .nine, .calculator .line_two .division, .calculator .line_two .four, .calculator .line_two .five, .calculator .line_two .six, .calculator .line_two .multiply, .calculator .line_two .one, .calculator .line_two .two, .calculator .line_two .three, .calculator .line_two .subtraction, .calculator .line_two .dot, .calculator .line_two .zero, .calculator .line_two .equal, .calculator .line_two .addition, .calculator .line_three .seven, .calculator .line_three .eight, .calculator .line_three .nine, .calculator .line_three .division, .calculator .line_three .four, .calculator .line_three .five, .calculator .line_three .six, .calculator .line_three .multiply, .calculator .line_three .one, .calculator .line_three .two, .calculator .line_three .three, .calculator .line_three .subtraction, .calculator .line_three .dot, .calculator .line_three .zero, .calculator .line_three .equal, .calculator .line_three .addition, .calculator .line_four .seven, .calculator .line_four .eight, .calculator .line_four .nine, .calculator .line_four .division, .calculator .line_four .four, .calculator .line_four .five, .calculator .line_four .six, .calculator .line_four .multiply, .calculator .line_four .one, .calculator .line_four .two, .calculator .line_four .three, .calculator .line_four .subtraction, .calculator .line_four .dot, .calculator .line_four .zero, .calculator .line_four .equal, .calculator .line_four .addition {
+  width: 80px;
+  height: 70px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  font-family: DynaPuff, cursive;
+  font-size: 1.6rem;
+  display: flex;
+}
+
+.calculator .line_one .seven:hover, .calculator .line_one .eight:hover, .calculator .line_one .nine:hover, .calculator .line_one .division:hover, .calculator .line_one .four:hover, .calculator .line_one .five:hover, .calculator .line_one .six:hover, .calculator .line_one .multiply:hover, .calculator .line_one .one:hover, .calculator .line_one .two:hover, .calculator .line_one .three:hover, .calculator .line_one .subtraction:hover, .calculator .line_one .dot:hover, .calculator .line_one .zero:hover, .calculator .line_one .equal:hover, .calculator .line_one .addition:hover, .calculator .line_two .seven:hover, .calculator .line_two .eight:hover, .calculator .line_two .nine:hover, .calculator .line_two .division:hover, .calculator .line_two .four:hover, .calculator .line_two .five:hover, .calculator .line_two .six:hover, .calculator .line_two .multiply:hover, .calculator .line_two .one:hover, .calculator .line_two .two:hover, .calculator .line_two .three:hover, .calculator .line_two .subtraction:hover, .calculator .line_two .dot:hover, .calculator .line_two .zero:hover, .calculator .line_two .equal:hover, .calculator .line_two .addition:hover, .calculator .line_three .seven:hover, .calculator .line_three .eight:hover, .calculator .line_three .nine:hover, .calculator .line_three .division:hover, .calculator .line_three .four:hover, .calculator .line_three .five:hover, .calculator .line_three .six:hover, .calculator .line_three .multiply:hover, .calculator .line_three .one:hover, .calculator .line_three .two:hover, .calculator .line_three .three:hover, .calculator .line_three .subtraction:hover, .calculator .line_three .dot:hover, .calculator .line_three .zero:hover, .calculator .line_three .equal:hover, .calculator .line_three .addition:hover, .calculator .line_four .seven:hover, .calculator .line_four .eight:hover, .calculator .line_four .nine:hover, .calculator .line_four .division:hover, .calculator .line_four .four:hover, .calculator .line_four .five:hover, .calculator .line_four .six:hover, .calculator .line_four .multiply:hover, .calculator .line_four .one:hover, .calculator .line_four .two:hover, .calculator .line_four .three:hover, .calculator .line_four .subtraction:hover, .calculator .line_four .dot:hover, .calculator .line_four .zero:hover, .calculator .line_four .equal:hover, .calculator .line_four .addition:hover {
+  cursor: pointer;
+  background-color: #dfdbdb;
+}
+
+.display {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: .5rem;
+  font-family: DynaPuff, cursive;
+  display: flex;
+}
+
+.display .calculate {
+  font-size: 2.5rem;
+}
+
+.display .result {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+footer {
+  justify-content: center;
+  align-items: center;
+  gap: .4rem;
+  display: flex;
+}
+
+footer .paragraph {
+  margin-top: 1.5rem;
+  font-family: DynaPuff, cursive;
+}
+
+footer img {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 1.3rem;
+  transition: transform .5s linear;
+}
+
+footer img:hover {
+  transform: rotate(360deg)scale(1.3);
+}
+
+/*# sourceMappingURL=index.f7626f62.css.map */
